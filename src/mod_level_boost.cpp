@@ -279,7 +279,7 @@ void LevelBoost::CreateHunterPet(Player* player, Creature* creature, uint32 entr
 
     hunterPet->SetPower(POWER_HAPPINESS, 1048000);
 
-    if (!hunterPet->InitStatsForLevel(player->getLevel()))
+    if (!hunterPet->InitStatsForLevel(player->GetLevel()))
     {
         LOG_ERROR("server", "Pet Create fail: No init stats for pet with entry {}", entry);
         delete hunterPet;
